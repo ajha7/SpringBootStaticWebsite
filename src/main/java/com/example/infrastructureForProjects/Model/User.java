@@ -3,7 +3,6 @@ package com.example.infrastructureForProjects.Model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.persistence.*;
-import java.util.Objects;
 
 @Entity
 @Table(name = "usersDB")
