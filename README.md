@@ -7,3 +7,4 @@ MySQL as database
 Thymeleaf for frontend
 
 Uses MVC design pattern
+Will look to comment it out later.
