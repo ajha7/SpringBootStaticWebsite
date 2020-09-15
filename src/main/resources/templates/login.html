@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang = "en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <meta charset="UTF-8" layout:fragment="header">
+    <title></title>
+    <style>
+        body {
+            background-color: #3e3e3e;
+            color: white;
+        }
+        label, .controls {
+            display: inline-block;
+        }
+        .form-signin-heading {
+            line-height: 100px
+        }
+    </style>
+</head>
+<body layout:fragment="content" data-gr-c-s-loaded="true">
+<div th:if="${errorMessage}">
+    <div th:text="${errorMessage}"></div>
+</div>
+<div class="container">
+    <form class="form-signin" method="post" action="/doLogin">
+        <h2 class="form-signin-heading"><center>Please sign in</center></h2>
+        <p>
+            <label for="username" class="sr-only">Username</label>
+            <input type="text" id="username" name="username" class="form-control" placeholder="Username" required="" autofocus="">
+        </p>
+        <p>
+            <label for="password" class="sr-only">Password</label>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Password" required="">
+        </p>
+        <p>
+        <div class="control-group boolean optional">
+            <label class="boolean optional control-label" for="user_remember_me">Remember me</label>
+            <div class="controls"><input name="user[remember_me]" type="hidden" value="0">
+                <label class="checkbox"><input class="boolean optional"
+                                               id="user_remember_me" name="user[remember_me]" type="checkbox" value="1"></label>
+            </div>
+        </div>
+        </p>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+h1
+{
+    text-align: center;
+    font-weight: bold;
+}
+body
+{
+  background-image: url('homepageimage.jpeg'); /* The image used */
+  background-position: top 200px right 100px; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 800px 300px; /* Resize the background image to cover the entire container */
+}
+.descriptionheader {
+  margin-left:2%;
+  top: 500px;
+  font-size: 23px;
+  margin-top: 9%;
+}
+.description {
+  margin-top: 3%;
+  margin-left:6.5%;
+  text-align: left;
+  float: left;
+}
+.homebutton {
+  background-color: #909090;
+  color: #d3d3d3;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 0px;
+}
+
+.form-group {
+    width: "50%";
+}
