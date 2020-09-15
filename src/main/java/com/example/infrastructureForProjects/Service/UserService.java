@@ -39,11 +39,6 @@ public class UserService {
         return userRepository.findByUsername(username);
     }
 
-    /* public String findByUsername(String username) {
-        return userRepository.findByUserName(username);
-       }
-    */
-
     public boolean findPassword(String password) {
         String hash = hashPassword(password);
         if (userRepository.findHash(hash) != null) {
